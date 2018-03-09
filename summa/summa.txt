@@ -1,0 +1,4 @@
+ABFRTEMP_L   0.0      0.1
+ABFRTEMP_U   1.0      1.5
+ASFTEMP_L    0.1      100
+ASFTEMP_U    0.1      100
