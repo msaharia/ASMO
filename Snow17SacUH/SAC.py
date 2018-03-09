@@ -9,7 +9,7 @@ import util
 #######################################################
 # USER SPECIFIC SECTION
 #======================================================
-modelpath = "../../../NCAR/NWS_hydro_models/Snow17SacUH/"
+modelpath = "/glade/p/work/manab/fcast/test/NWS_hydro_models/Snow17SacUH/"
 controlFileName = "SAC.txt"
 appInputFiles = [ modelpath + "sample_model/input/params/sac_params.HHWM8.txt", \
                   modelpath + "sample_model/input/params/snow17_params.HHWM8.txt", \
@@ -21,7 +21,7 @@ appInputTmplts = ["sac_params.HHWM8.txt.tmplt", "snow17_params.HHWM8.txt.tmplt",
 #======================================================
 def genAppInputFile(inputData, appTmpltFiles, appInputFiles, nInputs, inputNames):
     nfiles = len(appInputFiles)
-    for i in range(nfiles):
+    for i in range(nfiles):   # i is the number of files 
         infile = open(appTmpltFiles[i], "r")
         outfile = open(appInputFiles[i], "w")
         while 1:
@@ -63,7 +63,7 @@ def allindices(str1, str2, listindex = [], offset=0):
 #====================================================== 
 def runApplication():
     cwd = os.getcwd()
-    os.chdir(modelpath + "sample_model/run/") 
+    os.chdir(modelpath + "sample_model/run/")
     os.system("csh run_Snow17SacUH.csh")
     os.chdir(cwd)
     return
@@ -77,6 +77,7 @@ def getOutput():
     #Qobs = np.loadtxt(modelpath + "sample_model/input/misc/HHWM8.NRNI.dly.mmd.txt", skiprows=1)[15159:29037,3]
     # compute RMSE from 1980-01-01 to 2000-12-31
     Qsim = np.loadtxt(modelpath + "sample_model/output/wbvars.txt.HHWM8", skiprows=1)[3652:11322,18]
+    print Qsim
     Qobs = np.loadtxt(modelpath + "sample_model/input/misc/HHWM8.NRNI.dly.mmd.txt", skiprows=1)[18811:26481,3]
     RMSE = np.sqrt(((Qsim - Qobs) ** 2).mean())
     return RMSE
