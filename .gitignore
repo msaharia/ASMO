@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Manab files
+summa/log/
+summa/logasmo.txt
+summa/asmo_joblist
+summa/pbs.sh
