@@ -63,6 +63,7 @@ def runApplication():
     cwd = os.getcwd()
     os.chdir(modelpath) 
     os.system("csh run_HHDW1_summa.csh")
+    os.system("csh run_HHDW1_routing.csh")
     os.chdir(cwd)
     return
 
@@ -74,8 +75,17 @@ def getOutput():
     #Qsim = np.loadtxt(modelpath + "sample_model/output/wbvars.txt.HHWM8", skiprows=1)[0:13878,18]
     #Qobs = np.loadtxt(modelpath + "sample_model/input/misc/HHWM8.NRNI.dly.mmd.txt", skiprows=1)[15159:29037,3]
     # compute RMSE from 1980-01-01 to 2000-12-31
-    Qsim = np.loadtxt(modelpath + "sample_model/output/wbvars.txt.HHWM8", skiprows=1)[3652:11322,18]
-    Qobs = np.loadtxt(modelpath + "sample_model/input/misc/HHWM8.NRNI.dly.mmd.txt", skiprows=1)[18811:26481,3]
+    #Qsim = np.loadtxt(modelpath + "sample_model/output/wbvars.txt.HHWM8", skiprows=1)[3652:11322,18]
+    #Qobs = np.loadtxt(modelpath + "sample_model/input/misc/HHWM8.NRNI.dly.mmd.txt", skiprows=1)[18811:26481,3]
+
+    # For now, I use the instanteneous values at T21 to compare
+    Qsimdat = xr.open_dataset('/glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/asmo_out.nc')
+    #Qsim = Qsimdat.set_index(sSeg = 'reachID').sel(sSeg = 17003601)['IRFroutedRunoff'].values   #Gives all #3H values
+    Qsim = Qsimdat.set_index(sSeg = 'reachID').sel(sSeg = 17003601)['IRFroutedRunoff'].groupby('time.day').last().values # T21 values daily
+    stime = str(pd.to_datetime(Qsimdat['time'].min().values).date())  #Find start and end time of SUMMA/Route simulation
+    etime = str(pd.to_datetime(Qsimdat['time'].max().values).date())
+    Qobs = xr.open_dataset('/glade/p/work/manab/fcast/newsumma/summa/HHDW1/obs/obsflow.dly.HHDW1.nc')['flow'].loc[stime:etime].values
+
     RMSE = np.sqrt(((Qsim - Qobs) ** 2).mean())
     return RMSE
 
