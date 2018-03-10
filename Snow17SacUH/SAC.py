@@ -87,6 +87,7 @@ def getOutput():
 #======================================================
 def evaluate(x):
     pf = util.read_param_file(controlFileName)
+    print pf
     for n in range(pf['num_vars']):
         pf['names'][n] = 'UQ_' + pf['names'][n]
     genAppInputFile(x, appInputTmplts, appInputFiles, pf['num_vars'], pf['names'])
