@@ -10,7 +10,7 @@ import util
 import cPickle
 
 # model name
-modelname = 'SUMMA'
+modelname = 'summa'
 model = __import__(modelname)
 
 # result path
@@ -20,13 +20,18 @@ if not os.path.exists(respath):
 
 # load parameter name and range
 pf = util.read_param_file('%s.txt' % modelname)
+print('pfrunning')
 bd = np.array(pf['bounds'])
+print('bd')
 nInput = pf['num_vars']
+print('nInput')
 xlb = bd[:,0]
+print('xlb')
 xub = bd[:,1]
+print('ylb')
 
 # run ASMO
-niter = 100
+niter = 5
 bestx, bestf, x, y = ASMO.optimization(model, nInput, xlb, xub, niter)
 
 print('Optimum found by ASMO:')

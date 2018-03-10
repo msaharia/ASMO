@@ -5,12 +5,14 @@ import numpy as np
 import sys
 sys.path.append('../src')
 import util
+import xarray as xr
+import pandas as pd
 
 #######################################################
 # USER SPECIFIC SECTION
 #======================================================
 modelpath = "/glade/p/work/manab/fcast/newsumma/summa"
-controlFileName = "summa_fileManager_new.txt"
+controlFileName = "summa.txt"
 appInputFiles = [ os.path.join(modelpath, 'PNW/summa_zLocalParamInfo.txt')]
 appInputTmplts = ["summa_zLocalParamInfo_template.txt"]
 
