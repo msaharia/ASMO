@@ -1,0 +1,236 @@
+ GRU-Parallelization run activated. 2180 GRUs are selected for simulation.
+file_master is '/glade/p/work/manab/fcast/newsumma/summa/HHDW1/summa_fileManager_new.txt'.
+start at 19:52:09
+Name of Model Output control file: /glade/p/work/manab/fcast/newsumma/summa/HHDW1/outputControl.txt
+decisions file =  /glade/p/work/manab/fcast/newsumma/summa/HHDW1/summa_zDecisions.txt
+   1 simulStart: 2010-06-01 00:00
+   2 simulFinsh: 2010-06-10 21:00
+   3 soilCatTbl: ROSETTA
+   4 vegeParTbl: MODIFIED_IGBP_MODIS_NOAH
+   5 soilStress: NoahType
+   6 stomResist: BallBerry
+   7 num_method: itertive
+   8 fDerivMeth: analytic
+   9 LAI_method: monTable
+  10 f_Richards: mixdform
+  11 groundwatr: bigBuckt
+  12 hc_profile: constant
+  13 bcUpprTdyn: nrg_flux
+  14 bcLowrTdyn: zeroFlux
+  15 bcUpprSoiH: liq_flux
+  16 bcLowrSoiH: drainage
+  17 veg_traits: CM_QJRMS1998
+  18 canopyEmis: difTrans
+  19 snowIncept: lightSnow
+  20 windPrfile: logBelowCanopy
+  21 astability: louisinv
+  22 canopySrad: BeersLaw
+  23 alb_method: varDecay
+  24 compaction: anderson
+  25 snowLayers: CLM_2010
+  26 thCondSnow: jrdn1991
+  27 thCondSoil: funcSoilWet
+  28 spatial_gw: localColumn
+  29 subRouting: timeDlay
+startTime: iyyy, im, id, ih, imin = 2010  6  1  0  0
+finshTime: iyyy, im, id, ih, imin = 2010  6 10 21  0
+/glade/p/work/manab/fcast/newsumma/summa/HHDW1/summa_zLocalParamInfo.txt
+/glade/p/work/manab/fcast/newsumma/summa/HHDW1/summa_zBasinParamInfo.txt
+Skipping over LUTYPE = USGS
+Skipping over SLTYPE = STAS
+Skipping over SLTYPE = STAS-RUC
+ frozenPrecipMultip
+ theta_mp
+ theta_sat
+ theta_res
+ vGn_alpha
+ vGn_n
+ f_impede
+ k_soil
+ k_macropore
+ critSoilWilting
+ critSoilTranspire
+ winterSAI
+ summerLAI
+ heightCanopyTop
+ heightCanopyBottom
+ rootingDepth
+ rootDistExp
+ hruIndex
+Created output file:/glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+2010  6  1  0  0
+2010  6  2  0  0
+2010  6  3  0  0
+2010  6  4  0  0
+2010  6  5  0  0
+2010  6  6  0  0
+2010  6  7  0  0
+2010  6  8  0  0
+2010  6  9  0  0
+2010  6 10  0  0
+
+initial date/time = 2018-03-09  19:52:09.288
+  final date/time = 2018-03-09  19:53:54.152
+
+     elapsed init =    3.243000     s
+    fraction init =   3.0925771E-02 s
+
+     elapsed read =    1.092000     s
+    fraction read =   1.0413488E-02 s
+
+    elapsed write =    1.401000     s
+   fraction write =   1.3360162E-02 s
+
+  elapsed physics =    99.12400     s
+ fraction physics =   0.9452624     s
+
+     elapsed time =    104.8640     s
+       or              1.747733     m
+       or             2.9128889E-02 h
+       or             1.2137037E-03 d
+
+   number threads =         36
+
+ FORTRAN STOP: finished simulation successfully.
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ size(qsimHRUid) =         2180
+ GRU-Parallelization run activated. 2180 GRUs are selected for simulation.
+file_master is '/glade/p/work/manab/fcast/newsumma/summa/HHDW1/summa_fileManager_new.txt'.
+start at 19:53:56
+Name of Model Output control file: /glade/p/work/manab/fcast/newsumma/summa/HHDW1/outputControl.txt
+decisions file =  /glade/p/work/manab/fcast/newsumma/summa/HHDW1/summa_zDecisions.txt
+   1 simulStart: 2010-06-01 00:00
+   2 simulFinsh: 2010-06-10 21:00
+   3 soilCatTbl: ROSETTA
+   4 vegeParTbl: MODIFIED_IGBP_MODIS_NOAH
+   5 soilStress: NoahType
+   6 stomResist: BallBerry
+   7 num_method: itertive
+   8 fDerivMeth: analytic
+   9 LAI_method: monTable
+  10 f_Richards: mixdform
+  11 groundwatr: bigBuckt
+  12 hc_profile: constant
+  13 bcUpprTdyn: nrg_flux
+  14 bcLowrTdyn: zeroFlux
+  15 bcUpprSoiH: liq_flux
+  16 bcLowrSoiH: drainage
+  17 veg_traits: CM_QJRMS1998
+  18 canopyEmis: difTrans
+  19 snowIncept: lightSnow
+  20 windPrfile: logBelowCanopy
+  21 astability: louisinv
+  22 canopySrad: BeersLaw
+  23 alb_method: varDecay
+  24 compaction: anderson
+  25 snowLayers: CLM_2010
+  26 thCondSnow: jrdn1991
+  27 thCondSoil: funcSoilWet
+  28 spatial_gw: localColumn
+  29 subRouting: timeDlay
+startTime: iyyy, im, id, ih, imin = 2010  6  1  0  0
+finshTime: iyyy, im, id, ih, imin = 2010  6 10 21  0
+/glade/p/work/manab/fcast/newsumma/summa/HHDW1/summa_zLocalParamInfo.txt
+/glade/p/work/manab/fcast/newsumma/summa/HHDW1/summa_zBasinParamInfo.txt
+Skipping over LUTYPE = USGS
+Skipping over SLTYPE = STAS
+Skipping over SLTYPE = STAS-RUC
+ frozenPrecipMultip
+ theta_mp
+ theta_sat
+ theta_res
+ vGn_alpha
+ vGn_n
+ f_impede
+ k_soil
+ k_macropore
+ critSoilWilting
+ critSoilTranspire
+ winterSAI
+ summerLAI
+ heightCanopyTop
+ heightCanopyBottom
+ rootingDepth
+ rootDistExp
+ hruIndex
+Created output file:/glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+2010  6  1  0  0
+2010  6  2  0  0
+2010  6  3  0  0
+2010  6  4  0  0
+2010  6  5  0  0
+2010  6  6  0  0
+2010  6  7  0  0
+2010  6  8  0  0
+2010  6  9  0  0
+2010  6 10  0  0
+
+initial date/time = 2018-03-09  19:53:56.037
+  final date/time = 2018-03-09  19:55:39.946
+
+     elapsed init =    2.837000     s
+    fraction init =   2.7302736E-02 s
+
+     elapsed read =   0.5430000     s
+    fraction read =   5.2257264E-03 s
+
+    elapsed write =    1.392000     s
+   fraction write =   1.3396337E-02 s
+
+  elapsed physics =    99.13300     s
+ fraction physics =   0.9540367     s
+
+     elapsed time =    103.9090     s
+       or              1.731817     m
+       or             2.8863611E-02 h
+       or             1.2026505E-03 d
+
+   number threads =         36
+
+ FORTRAN STOP: finished simulation successfully.
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ size(qsimHRUid) =         2180
