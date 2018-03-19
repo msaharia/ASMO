@@ -33,7 +33,7 @@ print('ylb')
 # run ASMO
 niter = 5
 bestx, bestf, x, y = ASMO.optimization(model, nInput, xlb, xub, niter)
-
+print('test')
 print('Optimum found by ASMO:')
 print('bestx:')
 print(bestx)

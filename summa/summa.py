@@ -89,6 +89,8 @@ def getOutput():
     Qobs = xr.open_dataset('/glade/p/work/manab/fcast/newsumma/summa/HHDW1/obs/obsflow.dly.HHDW1.nc')['flow'].loc[stime:etime].values
 
     RMSE = np.sqrt(((Qsim - Qobs) ** 2).mean())
+    print('RMSE:')
+    print(RMSE)
     return RMSE
 
 #######################################################
