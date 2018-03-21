@@ -64,7 +64,7 @@ def allindices(str1, str2, listindex = [], offset=0):
 def runApplication():
     cwd = os.getcwd()
     os.chdir(modelpath) 
-    os.system("csh run_HHDW1_summa.csh")
+    os.system("csh run_HHDW1_summa_parallel.csh")
     os.system("csh run_HHDW1_routing.csh")
     os.chdir(cwd)
     return
