@@ -102,10 +102,8 @@ ENV/
 
 # Manab files
 summa/log/
-summa/logasmo.txt
-summa/asmo_joblist
-summa/pbs.sh
 Snow17SacUH/asmo_joblist
 Snow17SacUH/asmosaclog.txt
 Snow17SacUH/pbs.sh
 Snow17SacUH/log/
+summa/log*
