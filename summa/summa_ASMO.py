@@ -20,25 +20,18 @@ if not os.path.exists(respath):
 
 # load parameter name and range
 pf = util.read_param_file('%s.txt' % modelname)
-print('pfrunning')
 bd = np.array(pf['bounds'])
-print('bd')
 nInput = pf['num_vars']
-print('nInput')
 xlb = bd[:,0]
-print('xlb')
 xub = bd[:,1]
-print('ylb')
 
 # run ASMO
-niter = 5
+niter = 100
+print('Running ASMO optimization')
 bestx, bestf, x, y = ASMO.optimization(model, nInput, xlb, xub, niter)
-print('test')
 print('Optimum found by ASMO:')
 print('bestx:')
-print(bestx)
 print('bestf:')
-print(bestf)
 
 # save results to bin file
 with open('%s/SUMMA_ASMO.bin' % respath, 'w') as f:

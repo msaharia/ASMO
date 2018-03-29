@@ -11,9 +11,9 @@ import pandas as pd
 #######################################################
 # USER SPECIFIC SECTION
 #======================================================
-modelpath = "/glade/p/work/manab/fcast/newsumma/summa"
+modelpath = "/glade/u/home/manab/fcast/summa/"
 controlFileName = "summa.txt"
-appInputFiles = [ os.path.join(modelpath, 'PNW/summa_zLocalParamInfo.txt')]
+appInputFiles = [ os.path.join(modelpath, 'HHDW1/summa_zLocalParamInfo.txt')]
 appInputTmplts = ["summa_zLocalParamInfo_template.txt"]
 
 #######################################################
@@ -64,8 +64,9 @@ def allindices(str1, str2, listindex = [], offset=0):
 def runApplication():
     cwd = os.getcwd()
     os.chdir(modelpath) 
-    os.system("csh run_HHDW1_summa.csh")
-    os.system("csh run_HHDW1_routing.csh")
+    os.system("csh run_HHDW1_summa_parallel.csh; wait")
+    os.system("./concat.py")
+    os.system("csh run_HHDW1_routing.csh; wait")
     os.chdir(cwd)
     return
 
@@ -81,7 +82,7 @@ def getOutput():
     #Qobs = np.loadtxt(modelpath + "sample_model/input/misc/HHWM8.NRNI.dly.mmd.txt", skiprows=1)[18811:26481,3]
 
     # For now, I use the instanteneous values at T21 to compare
-    Qsimdat = xr.open_dataset('/glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/asmo_out.nc')
+    Qsimdat = xr.open_dataset('/glade/u/home/manab/fcast/summa/HHDW1/output/route/routeout.nc')
     #Qsim = Qsimdat.set_index(sSeg = 'reachID').sel(sSeg = 17003601)['IRFroutedRunoff'].values   #Gives all #3H values
     Qsim = Qsimdat.set_index(sSeg = 'reachID').sel(sSeg = 17003601)['IRFroutedRunoff'].groupby('time.day').last().values # T21 values daily
     stime = str(pd.to_datetime(Qsimdat['time'].min().values).date())  #Find start and end time of SUMMA/Route simulation
