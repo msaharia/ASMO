@@ -65,8 +65,11 @@ def runApplication():
     cwd = os.getcwd()
     os.chdir(modelpath) 
     os.system("csh run_HHDW1_summa_parallel.csh; wait")
+    print('Debug - Ran SUMMA in parallel')
     os.system("./concat.py")
+    print('Debug - Ran concatenation')
     os.system("csh run_HHDW1_routing.csh; wait")
+    print('Debug - Ran routing')
     os.chdir(cwd)
     return
 
@@ -84,16 +87,29 @@ def getOutput():
     # For now, I use the instanteneous values at T21 to compare
     Qsimdat = xr.open_dataset('/glade/u/home/manab/fcast/summa/HHDW1/output/route/routeout.nc')
     #Qsim = Qsimdat.set_index(sSeg = 'reachID').sel(sSeg = 17003601)['IRFroutedRunoff'].values   #Gives all #3H values
-    Qsim = Qsimdat.set_index(sSeg = 'reachID').sel(sSeg = 17003601)['IRFroutedRunoff'].groupby('time.day').last().values # T21 values daily
+    #Qsim = Qsimdat.set_index(sSeg = 'reachID').sel(sSeg = 17003601)['IRFroutedRunoff'].groupby('time.day').last().values # T21 values daily
+    Qsim = Qsimdat.set_index(sSeg = 'reachID').sel(sSeg = 17003601)['IRFroutedRunoff'].resample('D',how= 'mean', dim='time')
     stime = str(pd.to_datetime(Qsimdat['time'].min().values).date())  #Find start and end time of SUMMA/Route simulation
     etime = str(pd.to_datetime(Qsimdat['time'].max().values).date())
     Qobs = xr.open_dataset('/glade/p/work/manab/fcast/newsumma/summa/HHDW1/obs/obsflow.dly.HHDW1.nc')['flow'].loc[stime:etime].values
 
-    RMSE = np.sqrt(((Qsim - Qobs) ** 2).mean())
-    print('RMSE:')
-    print(RMSE)
-    return RMSE
+    metric = 'KGE'   #RMSE/KGE - Choose here
 
+    if metric == 'KGE':
+        # Kling-Gupta efficiency
+        print("Calculating KGE")
+        cc = np.corrcoef(Qsim,Qobs)[0,1]
+        alpha = (np.std(Qsim)/np.std(Qobs)).values
+        beta =  (np.sum(Qsim)/np.sum(Qobs)).values
+        metriccal = 1- np.sqrt( (cc-1)**2 + (alpha-1)**2 + (beta-1)**2 )   
+    elif metric == 'RMSE':
+        # RMSE
+        print("Calculating RMSE")
+        metriccal = np.sqrt(((Qsim - Qobs) ** 2).mean()).values
+    else:
+        raise Exception("Metric not selected correctly")
+
+    return metriccal
 #######################################################
 # MAIN PROGRAM
 #======================================================
