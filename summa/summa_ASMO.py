@@ -30,8 +30,12 @@ niter = 100
 print('Running ASMO optimization')
 bestx, bestf, x, y = ASMO.optimization(model, nInput, xlb, xub, niter)
 print('Optimum found by ASMO:')
-print('bestx:')
-print('bestf:')
+#print('bestx:%.3f' % bestx)
+#print('bestf:%.3f' % bestf)
+print('bestx')
+print(bestx)
+print('bestf')
+print(bestf)
 
 # save results to bin file
 with open('%s/SUMMA_ASMO.bin' % respath, 'w') as f:
