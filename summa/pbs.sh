@@ -11,4 +11,5 @@
 mkdir -p /glade/scratch/manab/temp
 export TMPDIR=/glade/scratch/manab/temp
 export MPI_SHEPHERD=true
-/glade/u/home/manab/anaconda3/envs/py27/bin/python summa_ASMO.py > log4
+/glade/u/home/manab/anaconda3/envs/py27/bin/python summa_ASMO.py > log_j29
+

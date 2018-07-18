@@ -24,16 +24,20 @@ def optimization(model, nInput, xlb, xub, niter, Xinit = None, Yinit = None,
     maxn:   number of maximum model runs - surrogate model
     """
     if (Xinit is None and Yinit is None):
-        Ninit = nInput * 10
-        Xinit = sampling.glp(Ninit, nInput)
+        Ninit = nInput * 10    #If number of parameters is 7, then Ninit is 70
+        Xinit = sampling.glp(Ninit, nInput)  #Xinit is (70,7). Creates initial lattice points with GoodLatticePointsDesign sampling 
         for i in range(Ninit):
-            Xinit[i,:] = Xinit[i,:] * (xub - xlb) + xlb
+            Xinit[i,:] = Xinit[i,:] * (xub - xlb) + xlb  #Creates the sets of input parameters for SUMMA 
         Yinit = np.zeros(Ninit)
         for i in range(Ninit):
-            Yinit[i] = model.evaluate(Xinit[i,:])
+            Yinit[i] = model.evaluate(Xinit[i,:])  #Takes each set of input parameters out of 70 rows, evaluates for SUMMA, and stores function value (RMSE/KGE)
     else:
         Ninit = Xinit.shape[0]
     icall = Ninit
+    print("Printing Xinit")
+    print(Xinit)
+    print("Printing Yinit")
+    print(Yinit)
     x = Xinit.copy()
     y = Yinit.copy()
 
@@ -43,7 +47,9 @@ def optimization(model, nInput, xlb, xub, niter, Xinit = None, Yinit = None,
         bestx_sm, bestf_sm, icall_sm, nloop_sm, \
         bestx_list_sm, bestf_list_sm, icall_list_sm = \
             SCEUA.optimization(sm, nInput, xlb, xub, 
-                               ngs, maxn, kstop, pcento, peps, verbose = False)
+                               ngs, maxn, kstop, pcento, peps, verbose = True)
+        print("Printing bestx_sm")
+        print(bestx_sm)
         bestx = bestx_sm.copy()
         bestf = model.evaluate(bestx)
         icall += 1

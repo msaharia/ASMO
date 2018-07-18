@@ -1,0 +1,514 @@
+[1] 50285
+[2] 50286
+[3] 50287
+[4] 50288
+[5] 50289
+[6] 50290
+[7] 50291
+[8] 50292
+[9] 50293
+[10] 50294
+[11] 50295
+[12] 50296
+[13] 50297
+[14] 50298
+[15] 50299
+[16] 50300
+[17] 50301
+[18] 50302
+[19] 50303
+[20] 50304
+[21] 50305
+[22] 50306
+[23] 50307
+[24] 50308
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 51198
+[2] 51199
+[3] 51200
+[4] 51201
+[5] 51202
+[6] 51203
+[7] 51204
+[8] 51205
+[9] 51206
+[10] 51207
+[11] 51208
+[12] 51209
+[13] 51210
+[14] 51211
+[15] 51212
+[16] 51213
+[17] 51214
+[18] 51215
+[19] 51216
+[20] 51217
+[21] 51218
+[22] 51219
+[23] 51220
+[24] 51221
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 52111
+[2] 52112
+[3] 52113
+[4] 52114
+[5] 52115
+[6] 52116
+[7] 52117
+[8] 52118
+[9] 52119
+[10] 52120
+[11] 52121
+[12] 52122
+[13] 52123
+[14] 52124
+[15] 52125
+[16] 52126
+[17] 52127
+[18] 52128
+[19] 52129
+[20] 52130
+[21] 52131
+[22] 52132
+[23] 52133
+[24] 52134
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 53029
+[2] 53030
+[3] 53031
+[4] 53032
+[5] 53033
+[6] 53034
+[7] 53035
+[8] 53036
+[9] 53037
+[10] 53038
+[11] 53039
+[12] 53040
+[13] 53041
+[14] 53042
+[15] 53043
+[16] 53044
+[17] 53045
+[18] 53046
+[19] 53047
+[20] 53048
+[21] 53049
+[22] 53050
+[23] 53051
+[24] 53052
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 53946
+[2] 53947
+[3] 53948
+[4] 53949
+[5] 53950
+[6] 53951
+[7] 53952
+[8] 53953
+[9] 53954
+[10] 53955
+[11] 53956
+[12] 53957
+[13] 53958
+[14] 53959
+[15] 53960
+[16] 53961
+[17] 53962
+[18] 53963
+[19] 53964
+[20] 53965
+[21] 53966
+[22] 53967
+[23] 53968
+[24] 53969
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 55914
+[2] 55915
+[3] 55916
+[4] 55917
+[5] 55918
+[6] 55919
+[7] 55920
+[8] 55921
+[9] 55922
+[10] 55923
+[11] 55924
+[12] 55925
+[13] 55926
+[14] 55927
+[15] 55928
+[16] 55929
+[17] 55930
+[18] 55931
+[19] 55932
+[20] 55933
+[21] 55934
+[22] 55935
+[23] 55936
+[24] 55937
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 56835
+[2] 56836
+[3] 56837
+[4] 56838
+[5] 56839
+[6] 56840
+[7] 56841
+[8] 56842
+[9] 56843
+[10] 56844
+[11] 56845
+[12] 56846
+[13] 56847
+[14] 56848
+[15] 56849
+[16] 56850
+[17] 56851
+[18] 56852
+[19] 56853
+[20] 56854
+[21] 56855
+[22] 56856
+[23] 56857
+[24] 56858
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 57749
+[2] 57750
+[3] 57751
+[4] 57752
+[5] 57753
+[6] 57754
+[7] 57755
+[8] 57756
+[9] 57757
+[10] 57758
+[11] 57759
+[12] 57760
+[13] 57761
+[14] 57762
+[15] 57763
+[16] 57764
+[17] 57765
+[18] 57766
+[19] 57767
+[20] 57768
+[21] 57769
+[22] 57770
+[23] 57771
+[24] 57772
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 58662
+[2] 58663
+[3] 58664
+[4] 58665
+[5] 58666
+[6] 58667
+[7] 58668
+[8] 58669
+[9] 58670
+[10] 58671
+[11] 58672
+[12] 58673
+[13] 58674
+[14] 58675
+[15] 58676
+[16] 58677
+[17] 58678
+[18] 58679
+[19] 58680
+[20] 58681
+[21] 58682
+[22] 58683
+[23] 58684
+[24] 58685
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 59576
+[2] 59577
+[3] 59578
+[4] 59579
+[5] 59580
+[6] 59581
+[7] 59582
+[8] 59583
+[9] 59584
+[10] 59585
+[11] 59586
+[12] 59587
+[13] 59588
+[14] 59589
+[15] 59590
+[16] 59591
+[17] 59592
+[18] 59593
+[19] 59594
+[20] 59595
+[21] 59596
+[22] 59597
+[23] 59598
+[24] 59599
+ <ancil_dir> --> /glade/p/work/manab/fcast/PNW_route/ancillary_data/
+ <input_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/output/asmo/
+ <output_dir> --> /glade/p/work/manab/fcast/newsumma/summa/HHDW1/routeout/
+ <fname_ntop> --> Network_Topology_Region17_2016_03_21_mod.nc
+ <seg_outlet> --> 17003601
+ <fname_qsim> --> HHDW1_output_G07342-09521_timestep.nc
+ <vname_qsim> --> averageInstantRunoff
+ <vname_time> --> time
+ <vname_hruid> --> hruId
+ <units_qsim> --> m/s
+ <dt_qsim> --> 10800
+ <restart_opt> --> F
+ <route_opt> --> 1
+ <fname_output> --> asmo_out.nc
+ <fname_state_in> --> state.in.nc
+ <fname_state_out> --> state.out.nc
+ <param_nml> --> 
+ /glade/p/work/manab/fcast/mizuRoute/route/settings/param.nml.default
+ Number of nSeg in Network topology:         6386
+ Outlet segment =     17003601
+ iRchStart   =       158300
+ Number of upstream segment from outlet segment (nRchCount):            8
+ maximum upstream area =    493260710.393000                8
+ FATAL ERROR: get_qDims/No such file or directory; name=/glade/p/work/manab/fcas
+ t/newsumma/summa/HHDW1/output/asmo/HHDW1_output_G07342-09521_timestep.nc
+[1] 60496
+[2] 60497
+[3] 60498
+[4] 60499
+[5] 60500
+[6] 60501
+[7] 60502
+[8] 60503
+[9] 60504
+[10] 60505
+[11] 60506
+[12] 60507
+[13] 60508
+[14] 60509
+[15] 60510
+[16] 60511
+[17] 60512
+[18] 60513
+[19] 60514
+[20] 60515
+[21] 60516
+[22] 60517
+[23] 60518
+[24] 60519

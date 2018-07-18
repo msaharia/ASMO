@@ -6,7 +6,7 @@ import copy
 
 def optimization(model, nopt, bl, bu, 
           ngs = None, maxn = 3000, kstop = 10, 
-          pcento = 0.1, peps = 0.001, verbose = True):
+          pcento = 0.1, peps = 0.001, verbose = False):
     """
     Main function of SCE-UA
     """

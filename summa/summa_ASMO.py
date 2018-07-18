@@ -22,16 +22,14 @@ if not os.path.exists(respath):
 pf = util.read_param_file('%s.txt' % modelname)
 bd = np.array(pf['bounds'])
 nInput = pf['num_vars']
-xlb = bd[:,0]
-xub = bd[:,1]
+xlb = bd[:,0]     #Array with lower bound values !MNB
+xub = bd[:,1]     #Array with upper bound values !MNB
 
 # run ASMO
 niter = 100
 print('Running ASMO optimization')
 bestx, bestf, x, y = ASMO.optimization(model, nInput, xlb, xub, niter)
 print('Optimum found by ASMO:')
-#print('bestx:%.3f' % bestx)
-#print('bestf:%.3f' % bestf)
 print('bestx')
 print(bestx)
 print('bestf')
